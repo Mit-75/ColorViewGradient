@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				333C15D32B94AB17000326F3 /* ColorViewGradient */,
+				333C15DD2B94AB1A000326F3 /* Assets.xcassets */,
 				333C15D22B94AB17000326F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,38 @@
 		333C15D32B94AB17000326F3 /* ColorViewGradient */ = {
 			isa = PBXGroup;
 			children = (
-				333C15D42B94AB17000326F3 /* AppDelegate.swift */,
-				333C15D62B94AB17000326F3 /* SceneDelegate.swift */,
-				333C15D82B94AB17000326F3 /* ViewController.swift */,
-				333C15DA2B94AB17000326F3 /* Main.storyboard */,
-				333C15DD2B94AB1A000326F3 /* Assets.xcassets */,
-				333C15DF2B94AB1A000326F3 /* LaunchScreen.storyboard */,
-				333C15E22B94AB1A000326F3 /* Info.plist */,
+				333C15EA2B94AB94000326F3 /* ViewControllers */,
+				333C15E92B94AB76000326F3 /* Storyboards */,
+				333C15E82B94AB5A000326F3 /* App */,
 			);
 			path = ColorViewGradient;
+			sourceTree = "<group>";
+		};
+		333C15E82B94AB5A000326F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				333C15D42B94AB17000326F3 /* AppDelegate.swift */,
+				333C15D62B94AB17000326F3 /* SceneDelegate.swift */,
+				333C15E22B94AB1A000326F3 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		333C15E92B94AB76000326F3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				333C15DA2B94AB17000326F3 /* Main.storyboard */,
+				333C15DF2B94AB1A000326F3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		333C15EA2B94AB94000326F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				333C15D82B94AB17000326F3 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +318,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z9UQ5R875;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorViewGradient/Info.plist;
+				INFOPLIST_FILE = ColorViewGradient/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,9 +331,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DmitryParhomenko.ColorViewGradient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Z9UQ5R875;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorViewGradient/Info.plist;
+				INFOPLIST_FILE = ColorViewGradient/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,9 +363,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DmitryParhomenko.ColorViewGradient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
