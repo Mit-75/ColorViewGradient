@@ -7,15 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     // MARK: - IB Outlets
+    
+    @IBOutlet var mainColorView: UIView!
+    
+    @IBOutlet var colorsView: [UIView]!
+    @IBOutlet var valueSlayders: [UILabel]!
+    @IBOutlet var sliders: [UISlider]!
     
     // MARK: - Pablic Properties
     
     // MARK: - Private Properties
-    
-    // MARK: - Initialisers
     
     // MARK: - Ovverides Methods
     override func viewDidLoad() {
