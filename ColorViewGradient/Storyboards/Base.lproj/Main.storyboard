@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ColorViewGradient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-C6-ckt">
-                                <rect key="frame" x="20" y="79" width="390" height="140"/>
+                                <rect key="frame" x="20" y="40" width="335" height="140"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
@@ -26,7 +26,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZO-xt-IfD">
-                                <rect key="frame" x="20" y="312" width="55" height="25"/>
+                                <rect key="frame" x="20" y="273" width="55" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Tae-Fr-NCr"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="ulI-4Q-6bb"/>
@@ -36,7 +36,7 @@
                                 <color key="highlightedColor" systemColor="quaternarySystemFillColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sur-hN-RkJ">
-                                <rect key="frame" x="20" y="422" width="55" height="25"/>
+                                <rect key="frame" x="20" y="383" width="55" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="2kI-d9-CrY"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="jlg-fB-hjg"/>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-X4-MeU">
-                                <rect key="frame" x="20" y="532" width="55" height="25"/>
+                                <rect key="frame" x="20" y="493" width="55" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="sab-2n-920"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="y3g-A5-36f"/>
@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uv-2h-Xx2">
-                                <rect key="frame" x="79" y="422" width="35" height="25"/>
+                                <rect key="frame" x="79" y="383" width="35" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="a7F-nQ-103"/>
                                     <constraint firstAttribute="height" constant="25" id="lM7-vX-B6f"/>
@@ -66,7 +66,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ll-lQ-lhF">
-                                <rect key="frame" x="79" y="312" width="35" height="25"/>
+                                <rect key="frame" x="79" y="273" width="35" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="560-Mq-0gZ"/>
                                     <constraint firstAttribute="height" constant="25" id="jef-rH-tGx"/>
@@ -76,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-aS-Whe">
-                                <rect key="frame" x="122" y="309" width="290" height="31"/>
+                                <rect key="frame" x="122" y="270" width="235" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
                                 <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <color key="thumbTintColor" systemColor="systemGray5Color"/>
@@ -85,7 +85,7 @@
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Or1-xv-oOo">
-                                <rect key="frame" x="20" y="269" width="390" height="25"/>
+                                <rect key="frame" x="20" y="230" width="335" height="25"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="3vu-ah-rIs"/>
@@ -97,7 +97,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxi-SR-4uz">
-                                <rect key="frame" x="20" y="379" width="390" height="25"/>
+                                <rect key="frame" x="20" y="340" width="335" height="25"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="aWt-h5-c2C"/>
@@ -109,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-6Y-vas">
-                                <rect key="frame" x="122" y="419" width="290" height="31"/>
+                                <rect key="frame" x="122" y="380" width="235" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <color key="thumbTintColor" systemColor="systemGray5Color"/>
@@ -118,7 +118,7 @@
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofB-SL-aee">
-                                <rect key="frame" x="20" y="489" width="390" height="25"/>
+                                <rect key="frame" x="20" y="450" width="335" height="25"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Dhz-Md-TX0"/>
@@ -130,7 +130,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-OL-aQf">
-                                <rect key="frame" x="123" y="529" width="289" height="31"/>
+                                <rect key="frame" x="123" y="490" width="234" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                 <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <color key="thumbTintColor" systemColor="systemGray5Color"/>
@@ -139,7 +139,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUp-c2-fcZ">
-                                <rect key="frame" x="80" y="532" width="35" height="25"/>
+                                <rect key="frame" x="80" y="493" width="35" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="dxc-3e-PXF"/>
                                     <constraint firstAttribute="height" constant="25" id="syG-Pr-yUZ"/>
@@ -154,7 +154,6 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kz7-C6-ckt" secondAttribute="trailing" constant="20" id="0C9-KY-non"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dkx-OL-aQf" secondAttribute="trailing" constant="20" id="0Oa-6k-5WO"/>
-                            <constraint firstItem="Or1-xv-oOo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0374813" id="35u-4k-D6u"/>
                             <constraint firstItem="ofB-SL-aee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7u5-gY-t3Z"/>
                             <constraint firstItem="Kz7-C6-ckt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DKg-Jr-9fa"/>
                             <constraint firstItem="Or1-xv-oOo" firstAttribute="top" secondItem="Kz7-C6-ckt" secondAttribute="bottom" constant="50" id="GaZ-m8-05U"/>
@@ -184,7 +183,6 @@
                             <constraint firstItem="Dkx-OL-aQf" firstAttribute="leading" secondItem="eUp-c2-fcZ" secondAttribute="trailing" constant="10" id="mRW-01-5A8"/>
                             <constraint firstItem="1Ll-lQ-lhF" firstAttribute="top" secondItem="Or1-xv-oOo" secondAttribute="bottom" constant="18" id="oYY-tL-fi1"/>
                             <constraint firstItem="Dkx-OL-aQf" firstAttribute="top" secondItem="ofB-SL-aee" secondAttribute="bottom" constant="15" id="qHp-QH-Ab0"/>
-                            <constraint firstItem="bxi-SR-4uz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0374813" id="rNq-32-mOa"/>
                             <constraint firstItem="oqP-6Y-vas" firstAttribute="leading" secondItem="6Uv-2h-Xx2" secondAttribute="trailing" constant="10" id="rio-2p-r2A"/>
                             <constraint firstItem="bxi-SR-4uz" firstAttribute="top" secondItem="Or1-xv-oOo" secondAttribute="bottom" constant="85" id="s7o-2O-XVX"/>
                             <constraint firstItem="MZO-xt-IfD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="spD-qZ-qHo"/>
