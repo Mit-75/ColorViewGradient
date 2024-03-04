@@ -13,11 +13,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet var mainColorView: UIView!
     
-   
-    @IBOutlet var redView: UIView!
-    @IBOutlet var greenView: UIView!
-    @IBOutlet var blueView: UIView!
-    
     @IBOutlet var redValueLabel: UILabel!
     @IBOutlet var greenValueLabel: UILabel!
     @IBOutlet var blueValueLabel: UILabel!
@@ -25,10 +20,6 @@ class MainViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
-    
-    // MARK: - Pablic Properties
-    
-    // MARK: - Private Properties
     
     // MARK: - Ovverides Methods
     override func viewDidLoad() {
@@ -38,24 +29,20 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - IB Actions
-    
-    @IBAction func redSliderAction() {
-        redValueLabel.text = String(format: "%.2f", redSlider.value)
+    @IBAction func sliderActions(_ sender: UISlider) {
         getViewGradient()
-        
+        switch sender {
+        case redSlider :
+            redValueLabel.text = String(format: "%.2f", redSlider.value)
+        case greenSlider :
+            greenValueLabel.text = String(format: "%.2f", greenSlider.value)
+        default:
+            blueValueLabel.text = String(format: "%.2f", blueSlider.value)
+        }
     }
-    @IBAction func greenSliderAction() {
-        greenValueLabel.text = String(format: "%.2f", greenSlider.value)
-        getViewGradient()
-       
-    }
-    @IBAction func blueSliderAction() {
-        blueValueLabel.text = String(format: "%.2f", blueSlider.value)
-        getViewGradient()
-       
-    }
-   
 }
+
+// MARK: - Extension UI
 extension MainViewController {
     
     private func getSetupUI() {
@@ -73,7 +60,7 @@ extension MainViewController {
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1
-            )
+        )
     }
     
 }
