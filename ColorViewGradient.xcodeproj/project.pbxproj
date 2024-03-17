@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333840562BA6BE5B00C32C75 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333840552BA6BE5B00C32C75 /* FirstViewController.swift */; };
+		333840592BA6C17500C32C75 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333840582BA6C17400C32C75 /* Color.swift */; };
 		333C15D52B94AB17000326F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C15D42B94AB17000326F3 /* AppDelegate.swift */; };
 		333C15D72B94AB17000326F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C15D62B94AB17000326F3 /* SceneDelegate.swift */; };
 		333C15D92B94AB17000326F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C15D82B94AB17000326F3 /* MainViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333840552BA6BE5B00C32C75 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		333840582BA6C17400C32C75 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		333C15D12B94AB17000326F3 /* ColorViewGradient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorViewGradient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		333C15D42B94AB17000326F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333C15D62B94AB17000326F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333840572BA6C10000C32C75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				333840582BA6C17400C32C75 /* Color.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		333C15C82B94AB16000326F3 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +69,7 @@
 		333C15D32B94AB17000326F3 /* ColorViewGradient */ = {
 			isa = PBXGroup;
 			children = (
+				333840572BA6C10000C32C75 /* Models */,
 				333C15EA2B94AB94000326F3 /* ViewControllers */,
 				333C15E92B94AB76000326F3 /* Storyboards */,
 				333C15E82B94AB5A000326F3 /* App */,
@@ -86,6 +99,7 @@
 		333C15EA2B94AB94000326F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				333840552BA6BE5B00C32C75 /* FirstViewController.swift */,
 				333C15D82B94AB17000326F3 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
@@ -165,6 +179,8 @@
 				333C15D92B94AB17000326F3 /* MainViewController.swift in Sources */,
 				333C15D52B94AB17000326F3 /* AppDelegate.swift in Sources */,
 				333C15D72B94AB17000326F3 /* SceneDelegate.swift in Sources */,
+				333840592BA6C17500C32C75 /* Color.swift in Sources */,
+				333840562BA6BE5B00C32C75 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

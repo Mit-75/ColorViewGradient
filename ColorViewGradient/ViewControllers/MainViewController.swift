@@ -9,6 +9,8 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+     private var color = Color.getColor()
+    
     // MARK: - IB Outlets
     
     @IBOutlet var mainColorView: UIView!
@@ -21,10 +23,19 @@ class MainViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    @IBOutlet var redTF: UITextField!
+    @IBOutlet var greenTF: UITextField!
+    @IBOutlet var blueTF: UITextField!
+    
     // MARK: - Ovverides Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        getSetupUI()
+        redSlider.value = Float(color.redValue)
+        greenSlider.value = 0.5
+        blueSlider.value = 0.9
+        redValueLabel.text = String(redSlider.value)
+        greenValueLabel.text = String(greenSlider.value)
+        blueValueLabel.text = String(blueSlider.value)
         getViewGradient()
     }
     
@@ -40,19 +51,22 @@ class MainViewController: UIViewController {
             blueValueLabel.text = String(format: "%.2f", blueSlider.value)
         }
     }
+    
+    @IBAction func doneBatton(_ sender: UIButton) {
+    }
 }
 
 // MARK: - Extension UI
 extension MainViewController {
     
-    private func getSetupUI() {
-        redSlider.value = 0.1
-        greenSlider.value = 0.5
-        blueSlider.value = 0.9
-        redValueLabel.text = String(redSlider.value)
-        greenValueLabel.text = String(greenSlider.value)
-        blueValueLabel.text = String(blueSlider.value)
-    }
+//    private func getSetupUI() {
+//        redSlider.value = 0.1
+//        greenSlider.value = 0.5
+//        blueSlider.value = 0.9
+//        redValueLabel.text = String(redSlider.value)
+//        greenValueLabel.text = String(greenSlider.value)
+//        blueValueLabel.text = String(blueSlider.value)
+//    }
     
     private func getViewGradient() {
         mainColorView.backgroundColor = UIColor(
