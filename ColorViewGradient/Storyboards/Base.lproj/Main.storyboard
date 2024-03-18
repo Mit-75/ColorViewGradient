@@ -131,18 +131,27 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <color key="thumbTintColor" systemColor="systemGray5Color"/>
+                                                <connections>
+                                                    <action selector="actionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="wa1-44-eFU"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-6Y-vas">
                                                 <rect key="frame" x="-2" y="65" width="194" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <color key="thumbTintColor" systemColor="systemGray5Color"/>
+                                                <connections>
+                                                    <action selector="actionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="3TI-3L-Quk"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-OL-aQf">
                                                 <rect key="frame" x="-2" y="130" width="194" height="26"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <color key="thumbTintColor" systemColor="systemGray5Color"/>
+                                                <connections>
+                                                    <action selector="actionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="MQC-Tr-1Id"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -192,7 +201,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="doneBatton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xsz-Bk-N2M"/>
+                                    <action selector="actionDoneButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQl-aj-SfU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,6 +219,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="vYz-gE-cmd"/>
+                    <connections>
+                        <outlet property="blueLabel" destination="eUp-c2-fcZ" id="RHB-nX-ULO"/>
+                        <outlet property="blueSlider" destination="Dkx-OL-aQf" id="7nf-Zp-w0d"/>
+                        <outlet property="blueTextField" destination="Cm7-n7-TFB" id="UTp-tV-xRj"/>
+                        <outlet property="colorView" destination="Kz7-C6-ckt" id="STy-Jk-oEq"/>
+                        <outlet property="doneButton" destination="gBU-v2-BUJ" id="vwW-I7-M1N"/>
+                        <outlet property="greenLabel" destination="6Uv-2h-Xx2" id="hiN-et-oGA"/>
+                        <outlet property="greenSlider" destination="oqP-6Y-vas" id="Mfg-QZ-z8q"/>
+                        <outlet property="greenTextField" destination="Gf4-l3-WET" id="cn5-F0-Iwb"/>
+                        <outlet property="redLabel" destination="1Ll-lQ-lhF" id="Dr9-nU-hgy"/>
+                        <outlet property="redSlider" destination="lOJ-aS-Whe" id="4qz-4r-g39"/>
+                        <outlet property="redTextField" destination="pzS-Ux-KDp" id="uu4-Sz-iyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
