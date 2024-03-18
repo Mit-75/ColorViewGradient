@@ -10,7 +10,7 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     weak var delegate: SettingsControllerDelegate?
-    var color: UIColor?
+    var mainColor: UIColor?
     
     // MARK: - IB Outlets
     
@@ -35,22 +35,44 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         doneButton.layer.cornerRadius = 10
+        colorView.backgroundColor = mainColor
+        
+        setValue(for: redSlider, greenSlider, blueSlider )
+        setValue(for: redLabel, greenLabel, blueLabel)
+        setValue(for: redTextField, greenTextField, blueTextField)
         
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
     
     // MARK: - IBAction
     
     @IBAction func actionSlider(_ sender: UISlider) {
+        switch sender {
+        case redSlider:
+            setValue(for: redLabel)
+            setValue(for: redTextField)
+        case greenSlider:
+            setValue(for: greenLabel)
+            setValue(for: greenTextField)
+        default:
+            setValue(for: blueLabel)
+            setValue(for: blueTextField)
+        }
+        setColorView()
     }
     
     @IBAction func actionDoneButton() {
-    
+        delegate?.setColor(for: colorView.backgroundColor ?? .gray)
         dismiss(animated: true)
     }
+}
+// MARK: - Private Methods
+extension SettingsViewController {
     
-    // MARK: - Private Methods
     private func setValue(for labels: UILabel...) {
         labels.forEach { label in
             switch label {
@@ -78,7 +100,7 @@ class SettingsViewController: UIViewController {
     }
     
     private func setValue(for sliders: UISlider...) {
-        let color = CIColor(color: color ?? .white)
+        let color = CIColor(color: mainColor ?? .white)
         sliders.forEach { slider in
             switch slider {
             case redSlider:
@@ -95,10 +117,13 @@ class SettingsViewController: UIViewController {
         String(format: "%.2f", slider.value)
     }
     
-    
+    private func setColorView() {
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+    }
 }
-
-
-  
-    
 
